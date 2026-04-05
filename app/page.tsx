@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ position: "relative", zIndex: 10 }}>
       <Navbar />
       <Hero />
       <FeaturedProjects />
