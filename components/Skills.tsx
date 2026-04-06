@@ -391,15 +391,15 @@ export default function Skills() {
 
         {/* Skill cards */}
         <div className="hex-grid">
-          {skills.map((skill, i) => (
-            <HexCard
-              key={skill.name}
-              skill={skill}
-              index={i}
-              active={filter === "all" || skill.category === filter}
-            />
-          ))}
-        </div>
+  {filtered.map((skill, i) => (
+    <HexCard
+      key={skill.name}
+      skill={skill}
+      index={i}
+      active={true}
+    />
+  ))}
+</div>
 
         {/* Legend */}
         <div className="legend">
